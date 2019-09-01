@@ -1,0 +1,211 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Set name here
+\def\name{Russel Shawn Dsouza}
+
+\def\footerlink{https://github.com/rshwndsz/resume/blob/master/CV.pdf}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {economics, statistics, mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 10in},
+  left=0.8in,
+  top=0.8in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+% Address
+\begin{minipage}{0.45\linewidth}
+  \href{http://www.nitk.ac.in/}{National Institute of Technology, Karnataka} \\
+  Mangalore, Karnataka \\
+  Surathkal, $575025$\\
+  India
+\end{minipage}
+\hfill
+% Contact Info
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (91+) 9611212081 \\
+    Email: & \href{mailto:russel.171ec143@nitk.edu.in}{\tt russel.171ec143@nitk.edu.in} \\
+    LinkedIn: & \href{https://www.linkedin.com/in/rshwndsz}{\tt linkedin.com/in/rshwndsz} \\
+    GitHub: & \href{https://www.github.com/rshwndsz}{\tt github.com/rshwndsz}
+  \end{tabular}
+\end{minipage}
+
+% Skills
+\section*{Skills}
+  \begin{itemize}
+    \item \textbf{Programming Languages}\\ 
+    Python, MATLAB, C, JavaScript, Verilog, \LaTeX
+    \item \textbf{Deep Learning Frameworks \& Libraries}\\ 
+    PyTorch, ignite, torchvision, torchtext, scikit-learn
+    \item \textbf{Image Processing Libraries}\\
+    scikit-image, OpenCV, Pillow
+    \item \textbf{Web Development}\\
+    Django, React, JavaScript, HTML, SCSS
+    \item \textbf{Data Mining Libraries}\\
+    Google BigQuery, SQL, requests, BeautifulSoup, scrapy
+    \item \textbf{Applications}\\
+    Xilinx Vivado, GitHub
+    \item \textbf{Hardware}\\
+    Raspberry Pi, Arduino, Xilinx Spartan FPGA
+    \item \textbf{Operating Systems}\\
+    Linux, MacOS, Windows
+  \end{itemize}
+
+% Completed Projects
+\section*{Completed Projects}
+  \begin{itemize}
+    \item
+    \textbf{Nuclei Segmentation}\\
+    Segmentation of images of nuclei in kidney tissue slides to aid early diagnosis of cancer using Deep Convolutional Neural Networks(CNNs).
+
+    \item
+    \textbf{Face Detection and Recognition}\\
+    Implementing real time face detection and recognition using OpenCV, scikit-learn and dlib on a Raspberry Pi.
+
+    \item
+    \textbf{Detecting Ponzi Schemes in Ethereum smart-contracts}\\
+    Using semi-supevised learning on raw bytecode of smart contracts deployed on the Ethereum blockchain mined using Google BigQuery.
+
+    \item
+    \textbf{Fake News Classifier}\\
+    Classifying news into true, mostly true, half true, barely true, false and pants-fire to help prevent the spread of fake news using Natural Language Processing(NLP).
+
+    \item
+    \textbf{Spell Checker}\\
+    A spell checker written in pure C.
+
+    \item
+    \textbf{Elections on Blockchain}\\
+    Using solidity and Microsoft Azure Blockchain workbench for secure, reliable elections deployed on the blockchain.
+  
+    \item 
+    \textbf{Space-time adaptive processing radar}\\
+    Studying Radar signal processing and implementing a Space-time adaptive processing (STAP) radar in MATLAB.
+  \end{itemize}
+
+% Ongoing Projects
+\section*{Ongoing Projects}
+  \begin{itemize}
+    \item 
+    \textbf{Emotion Recognition}\\
+    Using EEG, ECG, GSR, SKT signals to recognize emotions, helping those who find it difficult to express themselves.
+    \item 
+    \textbf{Ancient Japanese(Kuzushiji) Text Recognition}\\
+    Using CNNs to localize and classify cursive Kuzushiji text.
+    \item 
+    \textbf{Recursion Cell Image segmentation Challenge}\\
+    Using deep learning to eliminate experimental noise from biological images.
+  \end{itemize}
+
+% Education
+\section*{Education}
+  \begin{itemize}
+    \item National Institute of Technology, Karnataka, India\hfill 
+    2017-2021
+    \\
+    {\sl B.Tech in Electronics and Communications Engineering}
+
+    \item Little Rock Indian School, Karnataka, India\hfill
+    2004-2017
+    \\
+    {\sl K-12}\hfill
+  \end{itemize}
+
+% Awards & Honors
+\section*{Awards and Honors}
+\begin{itemize}
+  \item School topper in Math(99/100) and English(98/100) in Grade 12
+  \item Top 1\%(CGPA 10.0) in India in Grade 10
+\end{itemize}
+
+% Experience
+\section*{Experience}
+  \begin{itemize}
+    \item \textbf{Research Intern}\hfill{May 2019 - July 2019}\\
+    \textit{Under Dr. Shyam Lal - NITK, India}\\
+    Worked on segmentation of H\&E stained histopathology images of kidney tissues to detect kidney cancer.\\
+    Studied fundamentals of image processing, machine learning, deep learning and computer vision.
+
+    \item \textbf{Frontend Engineer}\hfill{August 2018 - April 2019}\\
+    \textit{IRIS, NITK (Official student management portal)}\\
+    Worked on building the frontend for the official student management portal used by more than 10 thousand people including students, faculty, administrators and alumni.\\
+    Mentored a freshman intern on frontend testing using JavaScript during Winter 2018.
+
+    \item \textbf{Python Developer}\hfill{May 2018 - July 2018}\\
+    \textit{Pinnacle Media (Local media company)}\\
+    Worked on implementing real-time face detection and recognition using OpenCV, dlib and scikit-learn on Raspberry Pi.
+  \end{itemize}
+
+% Interests
+\section*{Interests}
+  \begin{itemize}
+    \item Computer Vision, Augmented Reality(AR), Neuroscience, Virtual Reality(VR), Reinforcement learning
+  \end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
