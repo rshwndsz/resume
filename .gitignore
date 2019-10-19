@@ -139,3 +139,4 @@ sympy-plots-for-*.tex/
 # Remove coverletters
 CoverLetters/
 LoR-mitacs.*
+.synctex*
