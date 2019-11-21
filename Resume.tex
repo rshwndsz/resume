@@ -1,66 +1,60 @@
-\documentclass[margin]{res}  
-
-% Default font is the helvetica postscript font
-\usepackage{helvet}
-
-% Increase text height
-\textheight=700pt
+\documentclass[margin]{res}
+\usepackage{hyperref} % For urls
+\textheight=700pt % Increase text height
 
 \begin{document}
-  %	NAME AND ADDRESS 
+  %	NAME AND ADDRESS
   \name{Russel Shawn Dsouza}
-  \address{National Institute of Technology\\Karnataka, India\\linkedin.com/in/rshwndsz}
-  \address{(91+) 9611212081\\russel.171ec143@nitk.edu.in\\github.com/rshwndsz}
+  \address{National Institute of Technology\\
+           Karnataka, India\\
+           \href{https://linkedin.com/in/rshwndsz}{linkedin.com/in/rshwndsz}}
+  \address{(91+) 9611212081\\
+           russel.171ec143@nitk.edu.in\\
+           \href{https://github.com/rshwndsz}{github.com/rshwndsz}}
 
   \begin{resume}
     %	EDUCATION
     \section{Education}
-      \textbf{National Institute of Technology}, Karnataka, India\hfill 
-      2017-2021
-      \\
-      {\sl B.Tech in Electronics and Communications Engineering}\hfill 
-      
+      \textbf{National Institute of Technology Karnataka}, India\hfill
+      2017-2021 \\
+      {\sl B.Tech in Electronics and Communications Engineering}\hfill
 
       \textbf{Little Rock Indian School}, Karnataka, India\hfill
-      2004-2017
-      \\
+      2004-2017 \\
       {\sl K-12}\hfill
 
     %	PROJECTS
     \section{Projects}
       \par
       \textbf{Nuclei Segmentation}\\
+      % TODO Improve description
       Segmentation of nuclei in histopathology images of kidney tissues to aid early diagnosis of cancer using Deep Convolutional Neural Networks(CNNs)
 
       \par
-      \textbf{Face Detection and Recognition}\\
-      Implementing real time face detection and recognition using OpenCV, scikit-learn and dlib on a Raspberry Pi
-      
-      \par
       \textbf{Detecting Ponzi Schemes in Ethereum smart-contracts}\\
+      % TODO Improve description
       Using semi-supevised learning on raw bytecode of smart contracts deployed on the Ethereum blockchain mined using Google BigQuery
 
       \par
-      \textbf{Fake News Classifier}\\
+      \textbf{Fake news detector}\\
+      % TODO Improve description
       Classifying news into true, mostly true, half true, barely true, false and pants-fire to help prevent the spread of fake news using Natural Language Processing(NLP)
 
       \par
-      \textbf{Spell Checker}\\
-      A spell checker written in pure C
-
-      \par
-      \textbf{Elections on Blockchain}\\
-      Using solidity and Microsoft Azure Blockchain workbench for secure, reliable elections deployed on the blockchain
+      \textbf{Real-time face detection and recognition}\\
+      % TODO Improve description
+      Implementing real-time face detection and recognition using OpenCV, scikit-learn and dlib on a Raspberry Pi
 
     %	COMPUTER SKILLS
-    \section{Computer Skills}
+    \section{Technical Skills}
+      % TODO Improve organisation
       \textbf{Languages}: Python, MATLAB, C, JavaScript, Verilog, \LaTeX
       \\
-      \textbf{Frameworks and Libraries}: PyTorch, torchvision, torchtext, scikit-learn, scikit-image, OpenCV, numpy, pandas
+      \textbf{Frameworks and libraries}: PyTorch, torchvision, torchtext, scikit-learn, scikit-image, OpenCV, numpy, pandas
       \\
-      \textbf{Web Development}: Django, React, JavaScript, HTML, SCSS
+      \textbf{Web/App development}: Django, React, JavaScript
       \\
-      \textbf{Applications}: Microsoft Azure, Google BigQuery, Xilinx Vivado
+      \textbf{Applications}: Google BigQuery, Xilinx Vivado
 
     % RELEVANT COURSES
     % \section{Relevant Courses}
@@ -77,9 +71,19 @@
     \section{Experience}
       \employer{\textit{under Dr. Shyam Lal, NITK}}
       \location{Karnataka, India}
+      \dates{Nov 2019 - Present}
+      \title{\textbf{Research Assistant}}
+      \begin{position}
+        % TODO Improve description
+        Design and development of automated colon cancer detection system from H\&E stained histopathological images.
+      \end{position}
+
+      \employer{\textit{under Dr. Shyam Lal, NITK}}
+      \location{Karnataka, India}
       \dates{May 2019 - July 2019}
       \title{\textbf{Research Intern}}
       \begin{position}
+        % TODO Improve description
         Worked on segmentation of H\&E stained histopathology images of kidney tissues to detect kidney cancer. Studied fundamentals of image processing, machine learning, deep learning, computer vision.
       \end{position}
 
@@ -88,6 +92,7 @@
       \dates{August 2018 - April 2018}
       \title{\textbf{Frontend Developer}}
       \begin{position}
+        % TODO Improve description
         Worked on building the frontend for the official student management portal used by more than 10 thousand people including students, faculty, administrators and alumni.
       \end{position}
 
@@ -96,11 +101,12 @@
       \dates{May 2018 - July 2018}
       \title{\textbf{Python Developer}}
       \begin{position}
+        % TODO Improve description
         Worked on implementing real-time face detection and recognition using OpenCV, dlib and scikit-learn on Raspberry Pi
       \end{position}
 
     %	INTERESTS
     \section{Interests}
-      Computer Vision, Bionics, Reinforcement Learning, Augmented \& Virtual Reality
+      Computer Vision, Reinforcement Learning, Bionics, Augmented Reality
   \end{resume}
 \end{document}
