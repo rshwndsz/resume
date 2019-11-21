@@ -1,16 +1,23 @@
 \documentclass[margin]{res}
+
+% PACKAGES
 \usepackage{hyperref} % For urls
+\usepackage{xcolor} % For colors
+
+% CUSTOMIZATIONS
 \textheight=700pt % Increase text height
 
 \begin{document}
-  %	NAME AND ADDRESS
+
+  %	NAME ADDRESS AND SOCIALS
   \name{Russel Shawn Dsouza}
   \address{National Institute of Technology\\
            Karnataka, India\\
-           \href{https://linkedin.com/in/rshwndsz}{linkedin.com/in/rshwndsz}}
+           russel.171ec143@nitk.edu.in}
   \address{(91+) 9611212081\\
-           russel.171ec143@nitk.edu.in\\
+           \href{https://linkedin.com/in/rshwndsz}{linkedin.com/in/rshwndsz}\\
            \href{https://github.com/rshwndsz}{github.com/rshwndsz}}
+
 
   \begin{resume}
     %	EDUCATION
@@ -23,43 +30,39 @@
       2004-2017 \\
       {\sl K-12}\hfill
 
+
     %	PROJECTS
     \section{Projects}
       \par
-      \textbf{Nuclei Segmentation}\\
+      \textbf{Computational Histopathology}\\
       % TODO Improve description
-      Segmentation of nuclei in histopathology images of kidney tissues to aid early diagnosis of cancer using Deep Convolutional Neural Networks(CNNs)
+      Built a supervised learning based model in PyTorch to perform the segmentation of nuclei in H\&E stained histopathology images of kidney tissues.
 
       \par
-      \textbf{Detecting Ponzi Schemes in Ethereum smart-contracts}\\
+      \textbf{Detecting Ponzi schemes in Ethereum smart-contracts}\\
       % TODO Improve description
-      Using semi-supevised learning on raw bytecode of smart contracts deployed on the Ethereum blockchain mined using Google BigQuery
+      Used a semi-supevised learning based model built using PyTorch and torchtext on raw bytecode of Ethereum smart contracts mined using Google BigQuery.
 
       \par
-      \textbf{Fake news detector}\\
+      \textbf{Detecting the truth level of articles}\\
       % TODO Improve description
-      Classifying news into true, mostly true, half true, barely true, false and pants-fire to help prevent the spread of fake news using Natural Language Processing(NLP)
+      Classified news articles into true, mostly true, half true, barely true, false and pants-fire with a supervised learning based classifier built using PyTorch and torchtext.
 
       \par
       \textbf{Real-time face detection and recognition}\\
-      % TODO Improve description
-      Implementing real-time face detection and recognition using OpenCV, scikit-learn and dlib on a Raspberry Pi
+      Implemented real-time face detection and recognition using OpenCV, scikit-learn and dlib on a Raspberry Pi.
 
-    %	COMPUTER SKILLS
+
+    %	TECHNICAL SKILLS
     \section{Technical Skills}
-      % TODO Improve organisation
-      \textbf{Languages}: Python, MATLAB, C, JavaScript, Verilog, \LaTeX
+      \textbf{Languages}: Python, MATLAB, C, Verilog, JavaScript
       \\
-      \textbf{Frameworks and libraries}: PyTorch, torchvision, torchtext, scikit-learn, scikit-image, OpenCV, numpy, pandas
+      \textbf{Frameworks/Libraries}: PyTorch, scikit-learn, scikit-image, OpenCV, pandas
       \\
       \textbf{Web/App development}: Django, React, JavaScript
       \\
-      \textbf{Applications}: Google BigQuery, Xilinx Vivado
+      \textbf{Miscellaneous}: git, Linux, Google BigQuery, Xilinx Vivado, \LaTeX
 
-    % RELEVANT COURSES
-    % \section{Relevant Courses}
-    %   Digital Signal Processing, Digital System Design, Embedded System Design,
-    %   Microprocessors, Digital Electronics
 
     %	EXPERIENCE
     \begin{format}
@@ -69,44 +72,45 @@
     \end{format}
 
     \section{Experience}
-      \employer{\textit{under Dr. Shyam Lal, NITK}}
-      \location{Karnataka, India}
-      \dates{Nov 2019 - Present}
+      \employer{\textcolor{black!80}{\small{under Dr. Shyam Lal, NITK}}}
+      \location{\textcolor{black!80}{\small{Karnataka, India}}}
+      \dates{\textcolor{black!80}{\small{Nov 2019 - Present}}}
       \title{\textbf{Research Assistant}}
       \begin{position}
         % TODO Improve description
-        Design and development of automated colon cancer detection system from H\&E stained histopathological images.
+        Working on the design and development of an automated colon cancer detection system from H\&E stained histopathology images.
       \end{position}
 
-      \employer{\textit{under Dr. Shyam Lal, NITK}}
-      \location{Karnataka, India}
-      \dates{May 2019 - July 2019}
+      \employer{\textcolor{black!80}{\small{under Dr. Shyam Lal, NITK}}}
+      \location{\textcolor{black!80}{\small{Karnataka, India}}}
+      \dates{\textcolor{black!80}{\small{May 2019 - July 2019}}}
       \title{\textbf{Research Intern}}
       \begin{position}
         % TODO Improve description
-        Worked on segmentation of H\&E stained histopathology images of kidney tissues to detect kidney cancer. Studied fundamentals of image processing, machine learning, deep learning, computer vision.
+        Worked on the segmentation of H\&E stained histopathology images of kidney tissues to detect kidney cancer. Studied fundamentals of image processing, machine learning, deep learning, computer vision.
       \end{position}
 
-      \employer{\textit{IRIS, NITK}}
-      \location{Karnataka, India}
-      \dates{August 2018 - April 2018}
+      \employer{\textcolor{black!80}{\textcolor{black!80}{\small{IRIS, NITK}}}}
+      \location{\textcolor{black!80}{\textcolor{black!80}{\small{Karnataka, India}}}}
+      \dates{\textcolor{black!80}{\textcolor{black!80}{\small{August 2018 - April 2018}}}}
       \title{\textbf{Frontend Developer}}
       \begin{position}
-        % TODO Improve description
-        Worked on building the frontend for the official student management portal used by more than 10 thousand people including students, faculty, administrators and alumni.
+        Worked on frontend design and developement for `IRIS', a digital portal for all administrative and academic activities in NITK, with five thousand daily active users.
       \end{position}
 
-      \employer{\textit{Pinnacle Media}}
-      \location{Karnataka, India}
-      \dates{May 2018 - July 2018}
+      \employer{\textcolor{black!80}{\small{Pinnacle Media, Manipal, India}}}
+      \location{\textcolor{black!80}{\small{Karnataka, India}}}
+      \dates{\textcolor{black!80}{\small{May 2018 - July 2018}}}
       \title{\textbf{Python Developer}}
       \begin{position}
         % TODO Improve description
         Worked on implementing real-time face detection and recognition using OpenCV, dlib and scikit-learn on Raspberry Pi
       \end{position}
 
+
     %	INTERESTS
     \section{Interests}
       Computer Vision, Reinforcement Learning, Bionics, Augmented Reality
+
   \end{resume}
 \end{document}
