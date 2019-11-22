@@ -2,18 +2,13 @@
 %
 % Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
 % http://jblevins.org/projects/cv-template/
-%
-% You may use use this document as a template to create your own CV
-% and you may redistribute the source code freely. No attribution is
-% required in any resulting documents. I do ask that you please leave
-% this notice and the above URL in the source code if you choose to
-% redistribute this file.
 
 \documentclass[letterpaper]{article}
 
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{upgreek}
+\usepackage{xcolor}
 
 % Set name here
 \def\name{Russel Shawn Dsouza}
@@ -76,8 +71,10 @@
   Surathkal - $575025$\\
   India
 \end{minipage}
-\hfill
+
+
 % Contact Info
+\hfill
 \begin{minipage}{0.45\linewidth}
   \begin{tabular}{ll}
     Phone: & 91+ 9611212081 \\
@@ -87,77 +84,80 @@
   \end{tabular}
 \end{minipage}
 
+
 % Skills
 \section*{Skills}
   \begin{itemize}
     \item \textbf{Programming languages}\\
-    Python, MATLAB, C, C++, JavaScript, Verilog, \LaTeX
+    Python, MATLAB, C, JavaScript, Verilog
     \item \textbf{Deep learning}\\
     PyTorch, torchvision, torchtext, scikit-learn
     \item \textbf{Image processing}\\
     scikit-image, OpenCV, PIL
     \item \textbf{Data mining}\\
-    Google BigQuery, SQL
-    \item \textbf{Applications}\\
-    Xilinx Vivado, Microsoft Azure, Keil $\upmu$Vision
-    \item \textbf{Hardware}\\
-    Raspberry Pi, Arduino, Xilinx Nexys-4
+    Google BigQuery, SQL, pandas
     \item \textbf{Web/app development}\\
     Django, React, React Native, JavaScript
+    \item \textbf{Miscellaneous}\\
+    git, Linux, Xilinx Vivado, \LaTeX
   \end{itemize}
+
 
 % Projects
 \section*{Projects}
   \begin{itemize}
     \item
-    \textbf{Deep learning for colon cancer detection}\hfill{Nov 2019 - Present}\\
+    \textbf{Deep learning for colon cancer detection}\hfill{\textcolor{black!80}{\small{Nov 2019 - Present}}}\\
     Working on the design and development of an automated colon cancer detection system from H\&E stained histopathology images.
 
     \item
-    \textbf{Emotion recognition}\hfill{Aug 2019 - Present}\\
+    \textbf{Emotion recognition}\hfill{\textcolor{black!80}{\small{Aug 2019 - Present}}}\\
     Working on designing an embedded system to recognize emotions in real-time using physiological signals with deep learning.
 
     \item
-    \textbf{Deep learning for kidney cancer detection}\hfill{May 2019 - Sep 2019}\\
+    \textbf{Deep learning for kidney cancer detection}\hfill{\textcolor{black!80}{\small{May 2019 - Sep 2019}}}\\
     Built a supervised learning based model in PyTorch to perform the segmentation of nuclei in H\&E stained histopathology images of kidney tissues.
 
     \item
-    \textbf{Detecting Ponzi schemes in Ethereum smart-contracts}\hfill{Aug 2019 - Sep 2019}\\
+    \textbf{Detecting Ponzi schemes in Ethereum smart-contracts}\hfill{\textcolor{black!80}{\small{Aug 2019 - Sep 2019}}}\\
     Used a semi-supevised learning based model, built using PyTorch and torchtext, on raw bytecode of Ethereum smart contracts mined using Google BigQuery.
 
     \item
-    \textbf{Predicting truth level of news articles}\hfill{Jul 2019 - Aug 2019}\\
+    \textbf{Predicting truth level of news articles}\hfill{\textcolor{black!80}{\small{Jul 2019 - Aug 2019}}}\\
     Built a classifier using PyTorch and torchtext to classify news articles into true, mostly true, half true, barely true, false and pants-fire.
 
     \item
-    \textbf{Spell checker}\hfill{Oct 2018 - Nov 2018}\\
+    \textbf{Spell checker}\hfill{\textcolor{black!80}{\small{Oct 2018 - Nov 2018}}}\\
     Build a command line application to correct spelling errors in C.
 
     \item
-    \textbf{Face detection and recognition}\hfill{May 2018 - Jul 2018}\\
+    \textbf{Face detection and recognition}\hfill{\textcolor{black!80}{\small{May 20}18 - Jul 2018}}\\
     Implemented a real-time face detection and recognition system using OpenCV, scikit-learn and dlib on a Raspberry Pi.
 
   \end{itemize}
+
 
 % Education
 \section*{Education}
   \begin{itemize}
     \item National Institute of Technology Karnataka, India\hfill
-    2017-2021(expected)
+    \textcolor{black!80}{\small{2017-2021(expected)}}
     \\
-    {\sl B.Tech in Electronics and Communications Engineering}
+    \textcolor{black!80}{\small{B.Tech in Electronics and Communications Engineering}}
 
     \item Little Rock Indian School, Karnataka, India\hfill
-    2004-2017
+    \textcolor{black!80}{\small{2004-2017}}
     \\
-    {\sl K-12}\hfill
+    \textcolor{black!80}{\small{K-12}}
   \end{itemize}
+
 
 % Academic courses
 \section*{Course Work}
   Digital signal processing in Python, Digital system design in Verilog, Embedded system design, \\
   Microprocessors, Control Sytems, Numerical Analysis, Data structures and algorithms, \\
   Digital \& Analog electronics, Digital \& Analog communication
+
 
 % Awards & Honors
 \section*{Awards and Honors}
@@ -166,26 +166,28 @@
   \item Top 1\%(CGPA 10.0) in India in Grade 10
 \end{itemize}
 
+
 % Experience
 \section*{Experience}
   \begin{itemize}
-    \item \textbf{Research Assistant}\hfill{Oct 2019 - Present}\\
-    \textit{Under Dr. Shyam Lal - NITK, India}\\
+    \item \textbf{Research Assistant}\hfill{\textcolor{black!80}{\small{Oct 2019 - Present}}}\\
+    \textcolor{black!80}{\small{Under Dr. Shyam Lal - NITK, India}}\\
     Working on the design and development of an automated colon cancer detection system from H\&E stained histopathology images.
 
-    \item \textbf{Research Intern}\hfill{May 2019 - Jul 2019}\\
-    \textit{Under Dr. Shyam Lal - NITK, India}\\
+    \item \textbf{Research Intern}\hfill{\textcolor{black!80}{\small{May 2019 - Jul 2019}}}\\
+    \textcolor{black!80}{\small{Under Dr. Shyam Lal - NITK, India}}\\
     Worked on building deep learning models for the segmentation of H\&E stained histopathology images of kidney tissues to improve the automated diagnosis of kidney cancer.
 
-    \item \textbf{Frontend Engineer}\hfill{Aug 2018 - Apr 2019}\\
-    \textit{IRIS-NITK, India}\\
+    \item \textbf{Frontend Engineer}\hfill{\textcolor{black!80}{\small{Aug 2018 - Apr 2019}}}\\
+    \textcolor{black!80}{\small{IRIS-NITK, India}}\\
     Worked on building the frontend for the official student management portal 'IRIS' with more than five thousand daily active users including students, faculty, administrators and alumni.\\
     Mentored a freshman intern on frontend testing using JavaScript - Winter 2018.
 
-    \item \textbf{Python Developer}\hfill{May 2018 - Jul 2018}\\
-    \textit{Pinnacle Media, Manipal, India}\\
+    \item \textbf{Python Developer}\hfill{\textcolor{black!80}{\small{May 2018 - July 2018}}}\\
+    \textcolor{black!80}{\small{Pinnacle Media, Manipal, India}}\\
     Worked on implementing real time face detection and recognition using OpenCV, dlib and scikit-learn on a Raspberry Pi.
   \end{itemize}
+
 
 % Interests
 \section*{Interests}
@@ -193,9 +195,9 @@
     \item Medical imaging, biomedical signal processing, computer vision, cybernetics, augmented reality
   \end{itemize}
 
-\bigskip
 
 % Footer
+\bigskip
 \begin{center}
   \begin{footnotesize}
     Last updated: \today \\
