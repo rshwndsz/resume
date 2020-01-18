@@ -135,8 +135,3 @@ sympy-plots-for-*.tex/
 # WinEdt
 *.bak
 *.sav
-
-# Remove coverletters
-CoverLetters/
-LoR-mitacs.*
-.synctex*
