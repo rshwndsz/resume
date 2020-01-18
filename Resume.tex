@@ -1,16 +1,27 @@
 \documentclass[margin]{res}
 
-% PACKAGES
-\usepackage{hyperref} % For urls
+% Packages
+\usepackage[pdftex,
+            pdfauthor={Russel Shawn Dsouza},
+            pdftitle={Russel Dsouza's Resume},
+            pdfsubject={Resume},
+            pdfkeywords={medical-imaging, computer-vision, deep-learning, neuroscience},
+            pdfproducer={LaTeX},
+            pdfcreator={pdflatex},
+            colorlinks=true,
+            linkcolor=blue,
+            urlcolor =blue,
+            citecolor=blue,
+            anchorcolor=blue]{hyperref} % For URLs
 \usepackage{xcolor} % For colors
 \usepackage{fontawesome} % For icons
 
-% CUSTOMIZATIONS
+% Custom constants
 \textheight=700pt % Increase text height
 
 \begin{document}
 
-  %	NAME ADDRESS AND SOCIALS
+  %	Personal information
   \name{Russel Shawn Dsouza}
   \address{National Institute of Technology\\
            Karnataka, India\\
@@ -21,7 +32,7 @@
 
 
   \begin{resume}
-    %	EDUCATION
+    %	Education
     \section{Education}
       \textbf{National Institute of Technology Karnataka}, India\hfill
       2017-2021 \\
@@ -33,11 +44,11 @@
       {\sl K-12}
 
 
-    %	PROJECTS
+    %	Projects
     \section{Notable Projects}
       \par
       \textbf{Computational Histopathology}\\
-      Built a supervised learning based model in PyTorch to perform the segmentation of nuclei in H\&E stained histopathology images of kidney tissues to detect kidney cancer
+      Worked on implementing convolutional encoder-decoder architectures in PyTorch to perform the segmentation of nuclei in H\&E stained histopathology images of kidney tissues.
 
       \par
       \textbf{Detecting Ponzi schemes in Ethereum smart-contracts}\\
@@ -52,20 +63,20 @@
       Implemented real-time face detection and recognition using OpenCV, scikit-learn and dlib on a Raspberry Pi.
 
 
-    %	TECHNICAL SKILLS
+    %	Technical Skills
     \section{Technical Skills}
-      \textbf{Languages}: Python, MATLAB, Rust, C, Verilog, JavaScript
+      \textbf{Languages}: Python, MATLAB, C, Rust, JavaScript, C++, Verilog
       \\
       \textbf{Frameworks/Libraries}: PyTorch, torchvision, scikit-learn, OpenCV
       \\
-      \textbf{Web development}: Django, ReactJS, GatsbyJS
+      \textbf{Web development}: Django, ExpressJS, ReactJS, GatsbyJS, GraphQL
       \\
       \textbf{Tools}: git, Docker, Linux, Google BigQuery, Xilinx Vivado, \LaTeX
       \\
       \textbf{Hardware}: Xilinx Artix 7 FPGA, Arduino, Raspberry Pi
 
 
-    %	EXPERIENCE
+    %	Experience
     \begin{format}
       \title{l}\dates{r}\\
       \employer{l}\location{r}\\
@@ -75,8 +86,8 @@
     \section{Experience}
       \employer{\textcolor{black!80}{\small{under Dr. Shyam Lal, NITK}}}
       \location{\textcolor{black!80}{\small{Karnataka, India}}}
-      \dates{\textcolor{black!80}{\small{Nov 2019 - Present}}}
-      \title{\textbf{Research Assistant}}
+      \dates{\textcolor{black!80}{\small{Dec 2019 - Present}}}
+      \title{\textbf{Winter Research Intern}}
       \begin{position}
         Working on the design and development of an automated kidney cancer detection system from H\&E stained histopathology images.
       \end{position}
@@ -84,9 +95,9 @@
       \employer{\textcolor{black!80}{\small{under Dr. Shyam Lal, NITK}}}
       \location{\textcolor{black!80}{\small{Karnataka, India}}}
       \dates{\textcolor{black!80}{\small{May 2019 - July 2019}}}
-      \title{\textbf{Research Intern}}
+      \title{\textbf{Summer Research Intern}}
       \begin{position}
-          Worked on reproducing state-of-the-art deep learning architectures for the semantic segmentation of H\&E stained histopathology images of kidney tissues.
+          Worked on reproducing state-of-the-art deep learning architectures for the segmentation of H\&E stained histopathology images of kidney tissues.
       \end{position}
 
       \employer{\textcolor{black!80}{\textcolor{black!80}{\small{IRIS, NITK}}}}
@@ -95,7 +106,7 @@
       \title{\textbf{Frontend Developer}}
       \begin{position}
         Worked on building the frontend for the official student management portal `IRIS' with more than five thousand daily active users including students, faculty, administrators and alumni.
-        Mentored a freshman intern on frontend testing using JavaScript.
+        Mentored a freshman intern on frontend testing.
       \end{position}
 
       \employer{\textcolor{black!80}{\small{Pinnacle Media, Manipal, India}}}
@@ -107,9 +118,9 @@
       \end{position}
 
 
-    %	INTERESTS
+    %	Interests
     \section{Interests}
-      Neuroscience, Computer Vision, Neuromorphic computing, Cybernetics, and Augmented Reality
+      Medical imaging, computer vision, computational neuroscience and augmented reality
 
   \end{resume}
 \end{document}
