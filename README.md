@@ -1,10 +1,10 @@
 # My Resume/CV
 
-The files in this repo are as follows:
+The files in this repository are as follows:
 
 * [Detailed Curriculum Vitae](CV.pdf)
 * [Brief 1-page resume](Resume.pdf)
-* [Letter of recommendation from Dr. Shyam Lal, Assistant Professor, NITK](LoR-Dr_Shyam_Lal.pdf)
+* [Letter of recommendation](LoR-Dr_Shyam_Lal.pdf) from [Dr. Shyam Lal, Assistant Professor, NITK](http://ece.nitk.ac.in/faculty/shyam-lal)
 
 ## Credits
 
