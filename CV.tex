@@ -22,7 +22,7 @@
   colorlinks = true,
   urlcolor = black,
   pdfauthor = {\name},
-  pdfkeywords = {medical-imaging, signal-processing, deep-learning},
+  pdfkeywords = {neuroscience, medical-imaging, signal-processing, deep-learning},
   pdftitle = {\name: Russel Dsouza's Curriculum Vitae},
   pdfsubject = {Russel Dsouza's Curriculum Vitae},
   pdfpagemode = UseNone
@@ -63,7 +63,7 @@
 
 % Custom commands
 %% Smaller font size and lighter text color for dates
-\newcommand{\datefont}[1]{\textcolor{black!80}{\small{#1}}}
+\newcommand{\smallGreyFont}[1]{\textcolor{black!80}{\small{#1}}}
 
 \begin{document}
 
@@ -74,7 +74,6 @@
 
 % Address
 \begin{minipage}{0.45\linewidth}
-  % TODO Add current degree
   \href{http://www.nitk.ac.in/}{National Institute of Technology Karnataka} \\
   NH 66, Srinivasnagar \\
   Surathkal, Mangalore \\
@@ -114,49 +113,54 @@
 
 % Projects
 \section*{Notable Projects}
-  % TODO Add more details to each project
-  % TODO Add research areas & core competencies
   \begin{itemize}
     \item
     \textbf{Computational histopathology}
-    \hfill{\datefont{Dec 2020 - Present}}\\
-      Working on building a benchmark repository of state-of-the-art architectures and methods for segmentation and classification of nuclei in histopathology images.
+    \hfill{\smallGreyFont{Dec 2020 - Present}}\\
+      Working on building a benchmark repository of state-of-the-art architectures and methods for segmentation and classification of nuclei in histopathology images.\\
+      \smallGreyFont{Technologies used: PyTorch, Nvidia-Dali}
 
     \item
     \textbf{Cell nuclei segmentation}
-    \hfill{\datefont{May 2019 - July 2019}}\\
-      Implemented convolutional encoder-decoder architectures including U-Net, UNet with pyramid pooling and ResNets in PyTorch to perform the semantic segmentation of nuclei in H\&E stained histopathology images of kidney tissues.
+    \hfill{\smallGreyFont{May 2019 - July 2019}}\\
+      Implemented convolutional encoder-decoder architectures including U-Net, UNet with pyramid pooling and ResNets to perform the semantic segmentation of nuclei in H\&E stained histopathology images of kidney tissues.\\
+      \smallGreyFont{PyTorch, OpenCV}
 
     \item
     \textbf{Brain tumour segmentation}
-    \hfill{\datefont{Dec 2019}}\\
-       Implemented state-of-the-art semantic segmentation models in Keras and trained them on a part of the BRATS dataset to segment brain tumour and surrounding edema as a part of a 14-day workshop on Machine learning techniques in Neuroimaging.
+    \hfill{\smallGreyFont{Dec 2019}}\\
+       Coded state-of-the-art semantic segmentation models and trained them on a part of the BRATS dataset to segment brain tumour and surrounding edema as a part of a 14-day workshop on Machine learning techniques in Neuroimaging.\\
+       \smallGreyFont{Keras, OpenCV}
 
     \item
     \textbf{Classifying components of handwritten Bengali}
-    \hfill{\datefont{Jan 2020 - Present}}\\
-      Working on the Kaggle Bengali.AI Grapheme classification challenge
-    using efficient models that train on single GPU systems.
+    \hfill{\smallGreyFont{Jan 2020 - Present}}\\
+      Working on efficient, flexible models with low training times on single GPU systems for the Kaggle Bengali.AI Grapheme classification challenge.\\
+      \smallGreyFont{PyTorch, Nvidia-Dali}
 
     \item
     \textbf{Detecting Ponzi schemes in Ethereum smart-contracts}
-    \hfill{\datefont{Aug 2019 - Sep 2019}}\\
-      Built a custom model using CNNs and Stacked Autoencoders in PyTorch and torchtext, and trained it on raw bytecode of Ethereum smart contracts mined using Google BigQuery to detect Ponzi schemes in Ethereum smart-contracts as a part of a 48-hour sprint to apply deep-learning on the blockchain.
+    \hfill{\smallGreyFont{Aug 2019 - Sep 2019}}\\
+      Built a custom model using CNNs and stacked autoencoders and trained it on raw bytecode of Ethereum smart contracts mined from the blockchain to detect Ponzi schemes in Ethereum smart-contracts as a part of a 48-hour sprint to "apply deep learning on any part of the blockchain".\\
+      \smallGreyFont{PyTorch, torchtext, SQL, Google BigQuery}
 
     \item
     \textbf{Predicting truth level of news articles}
-    \hfill{\datefont{Jul 2019 - Aug 2019}}\\
-      Built a classifier using a Bidirectional-LSTM in PyTorch and torchtext, and trained it on the LIAR-PLUS dataset to classify news articles into 6 different categories based on their truth-level.
+    \hfill{\smallGreyFont{Jul 2019 - Aug 2019}}\\
+      Built a classifier using a Bidirectional-LSTM, and trained it on the LIAR-PLUS dataset to classify news articles into 6 different categories based on their truth-level.\\
+      \smallGreyFont{PyTorch, torchtext}
 
     \item
     \textbf{Spell checker}
-    \hfill{\datefont{Oct 2018 - Nov 2018}}\\
-      Built a command line application to correct spelling errors in C as a part of a course-project in Data Structures \& Algorithms.
+    \hfill{\smallGreyFont{Oct 2018 - Nov 2018}}\\
+      Built a command line application to correct spelling errors as a part of a course-project in Data Structures \& Algorithms.\\
+      \smallGreyFont{C, make}
 
     \item
     \textbf{Space-time adaptive processing radar}
-    \hfill{\datefont{Apr 2019 - May 2019}}\\
-      Presented a report on space-time adaptive processing and simulated STAP in a radar in MATLAB as a part of a mini-project on Digital Signal Processing.
+    \hfill{\smallGreyFont{Apr 2019 - May 2019}}\\
+      Presented a report on space-time adaptive processing and simulated STAP in a radar as a part of a mini-project on Digital Signal Processing.\\
+      \smallGreyFont{MATLAB, \LaTeX}
 
   \end{itemize}
 
@@ -166,23 +170,23 @@
   \begin{itemize}
     \item \textbf{Winter Research Intern}
     \hfill{\textcolor{black!80}{\small{Dec 2019 - Present}}}\\
-    \datefont{Under Dr. Shyam Lal - NITK, India}\\
+    \smallGreyFont{Under Dr. Shyam Lal - NITK, India}\\
       Working on the design and development of an automated kidney \& colon cancer detection system from H\&E stained histopathology images.
 
     \item \textbf{Summer Research Intern}
     \hfill{\textcolor{black!80}{\small{May 2019 - Jul 2019}}}\\
-    \datefont{Under Dr. Shyam Lal - NITK, India}\\
+    \smallGreyFont{Under Dr. Shyam Lal - NITK, India}\\
       Worked on reproducing state-of-the-art deep learning architectures for the semantic segmentation of H\&E stained histopathology images of kidney tissues.
 
     \item \textbf{Frontend Engineer}
     \hfill{\textcolor{black!80}{\small{Aug 2018 - Apr 2019}}}\\
-    \datefont{IRIS-NITK, India}\\
+    \smallGreyFont{IRIS-NITK, India}\\
       Worked on building the frontend for the official student management portal `IRIS' with more than five thousand daily active users including students, faculty, administrators and alumni.\\
       Mentored a freshman intern on frontend testing.
 
     \item \textbf{Python Developer}
     \hfill{\textcolor{black!80}{\small{May 2018 - July 2018}}}\\
-    \datefont{Pinnacle Media, Manipal, India}\\
+    \smallGreyFont{Pinnacle Media, Manipal, India}\\
       Worked on implementing real time face detection and recognition using open-cv, dlib and scikit-learn on a Raspberry Pi.
   \end{itemize}
 
@@ -204,15 +208,15 @@
 \section*{Education}
   \begin{itemize}
     \item National Institute of Technology Karnataka, India\hfill
-    \datefont{2017-2021(expected)}
+    \smallGreyFont{2017-2021(expected)}
     \\
-    \datefont{B.Tech in Electronics and Communications Engineering}
-    \hfill{\datefont{CGPA: 8.7}}
+    \smallGreyFont{B.Tech in Electronics and Communications Engineering}
+    \hfill{\smallGreyFont{CGPA: 8.7}}
 
     \item Little Rock Indian School, Karnataka, India\hfill
-    \datefont{2004-2017}
+    \smallGreyFont{2004-2017}
     \\
-    \datefont{K-12}
+    \smallGreyFont{K-12}
   \end{itemize}
 
   % TODO Add references
@@ -240,7 +244,7 @@
 % Interests
 \section*{Interests}
   \begin{itemize}
-    \item Medical imaging, computer vision, computational neuroscience and augmented reality
+    \item Medical imaging, computer vision, simulation neuroscience and augmented reality
   \end{itemize}
 
 
