@@ -4,7 +4,7 @@ The files in this repository are as follows:
 
 * [Detailed Curriculum Vitae](CV.pdf)
 * [Brief 1-page resume](Resume.pdf)
-* [Letter of recommendation](LoR-Dr_Shyam_Lal.pdf) from [Dr. Shyam Lal, Assistant Professor, NITK](http://ece.nitk.ac.in/faculty/shyam-lal)
+* A Letter of recommendation from [Dr. Shyam Lal, Assistant Professor, NITK](http://ece.nitk.ac.in/faculty/shyam-lal) - [[pdf]](LoR-Dr_Shyam_Lal.pdf) [[doc]](https://docs.google.com/document/d/14LeFjL7ziDLAVrl1AtAbk9utR2y9xSMnAYmoWlH9C_M/edit?usp=sharing)
 
 ## Credits
 
