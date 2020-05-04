@@ -14,9 +14,8 @@
 
 % Name
 \def\name{Russel Shawn Dsouza}
-
+% Link to blob on GitHub 
 \def\footerlink{https://github.com/rshwndsz/resume/blob/master/CV.pdf}
-
 % Metadata
 \hypersetup{
   colorlinks = true,
@@ -34,7 +33,7 @@
   top=0.8in
 }
 
-% Customize page headers
+% Custom page headers
 \pagestyle{myheadings}
 \markright{\name}
 \thispagestyle{empty}
@@ -44,7 +43,7 @@
 \sectionfont{\rmfamily\mdseries\Large}
 \subsectionfont{\rmfamily\mdseries\itshape\large}
 
-% Colors
+% Custom Colors
 \definecolor{linkedinblue}{HTML}{0077B5}
 \definecolor{gmailred}{HTML}{D44638}
 \definecolor{githubblack}{HTML}{333333}
@@ -84,35 +83,30 @@
 \begin{minipage}{0.3\linewidth}
   \begin{tabular}{ll}
     \textcolor{gmailred}{\faEnvelopeO} \href{mailto:russel.171ec143@nitk.edu.in}{\tt russel.171ec143@nitk.edu.in} \\
+    \textcolor{gmailred}{\faEnvelopeO} \href{mailto:rshwndsz@gmail.com}{\tt rshwndsz@gmail.com} \\
     \textcolor{githubblack}{\faGithub} \href{https://www.github.com/rshwndsz}{\tt github.com/rshwndsz} \\
     \textcolor{linkedinblue}{\faLinkedin} \href{https://www.linkedin.com/in/rshwndsz}{\tt linkedin.com/in/rshwndsz}
   \end{tabular}
 \end{minipage}
 
-
 % Skills
 \section*{Skills}
   \begin{itemize}
-    \item \textbf{Research areas}\\
-    Deep learning for computer vision\\
-    Low power computer vision\\
-    Medical image processing - Histopathology, MRI, CT
-    \item \textbf{Programming languages}\\
-    Python, MATLAB, C, JavaScript, C++, Verilog
-    \item \textbf{Deep learning}\\
+    \item \textbf{Programming languages} - 
+    Python, C++, MATLAB, C, JavaScript, Verilog, Rust
+    \item \textbf{Deep learning} - 
     PyTorch, Keras, scikit-learn
-    \item \textbf{Image processing}\\
-    OpenCV, scikit-image, PIL
-    \item \textbf{Data mining \& analysis}\\
-    Google BigQuery, SQL, requests, pandas
-    \item \textbf{Web development}\\
-    Django, ExpressJS, ReactJS, GatsbyJS, GraphQL
-    \item \textbf{Hardware}\\
+    \item \textbf{Image processing} - 
+    OpenCV, scikit-image, PIL, torchvision
+    \item \textbf{Data mining \& analysis} - 
+    Google BigQuery, SQL, requests, pandas, d3.js
+    \item \textbf{Web development} - 
+    React.js, Gatsby.js
+    \item \textbf{Hardware} - 
     Xilinx Vivado and Artix 7 fpga, ngSPICE, Raspberry Pi, Arduino
-    \item \textbf{Tools}\\
-    git, Docker, Linux,  \LaTeX
+    \item \textbf{Tools} - 
+    git, Docker, Linux, vim, \LaTeX
   \end{itemize}
-
 
 % Projects
 \section*{Notable Projects}
@@ -120,14 +114,14 @@
   \item
     \textbf{Detection of Urothelial Carcinoma from whole-slide images}
     \hfill{\smallGreyFont{Feb 2020 - Present}}\\
-      Working on the design and development of an efficient automated algorithm for the  visual and semantically interpretable detection of Urothelial Carcinoma from whole slide images with an average dimension of 80,000 x 50,000 \\
+      Working on the design and development of an efficient automated algorithm for the visual and semantically interpretable detection of Urothelial Carcinoma from whole slide images with an average dimension of 80,000 x 50,000 \\
       \texttt{\smallGreyFont{Technologies used: rshwndsz/histovision}}
 
     \item
     \textbf{Computational histopathology}
     \hfill{\smallGreyFont{Dec 2019 - Present}}\\
       Working on \texttt{rshwndsz/histovision}, a benchmark repository of state-of-the-art architectures and methods for segmentation and classification of nuclei in histopathology images.\\
-      \texttt{\smallGreyFont{PyTorch, OpenCV, Nvidia-Dali}}
+      \texttt{\smallGreyFont{PyTorch, OpenCV}}
 
     \item
     \textbf{Cell nuclei segmentation}
@@ -141,11 +135,11 @@
        Coded state-of-the-art semantic segmentation models and trained them on a part of the BRATS dataset to segment brain tumour and surrounding edema as a part of a 14-day workshop on Machine learning techniques in Neuroimaging.\\
        \texttt{\smallGreyFont{Keras, OpenCV}}
 
-    \item
-    \textbf{Classifying components of handwritten Bengali}
-    \hfill{\smallGreyFont{Jan 2020 - Present}}\\
-      Working on efficient, flexible models with low training times on single GPU systems for the Kaggle Bengali.AI Grapheme classification challenge.\\
-      \texttt{\smallGreyFont{PyTorch, Nvidia-Dali}}
+    % \item
+    % \textbf{Classifying components of handwritten Bengali}
+    % \hfill{\smallGreyFont{Jan 2020 - Present}}\\
+    %   Working on efficient, flexible models with low training times on single GPU systems for the Kaggle Bengali.AI Grapheme classification challenge.\\
+    %   \texttt{\smallGreyFont{PyTorch}}
 
     \item
     \textbf{Detecting Ponzi schemes in Ethereum smart-contracts}
@@ -170,9 +164,7 @@
     \hfill{\smallGreyFont{Apr 2019 - May 2019}}\\
       Presented a report on space-time adaptive processing and simulated STAP in a radar as a part of a mini-project in Digital Signal Processing.\\
       \smallGreyFont{\texttt{MATLAB}, \LaTeX}
-
   \end{itemize}
-
 
 % Experience
 \section*{Experience}
@@ -180,7 +172,7 @@
     \item \textbf{Winter Research Intern}
     \hfill{\textcolor{black!80}{\small{Dec 2019 - Jan 2020}}}\\
     \smallGreyFont{Under Dr. Shyam Lal - NITK, India}\\
-      Working on the design and development of an automated kidney \& colon cancer detection system from H\&E stained histopathology images.
+      Worked on the design and development of an automated kidney \& colon cancer detection system from H\&E stained histopathology images.
 
     \item \textbf{Summer Research Intern}
     \hfill{\textcolor{black!80}{\small{May 2019 - Jul 2019}}}\\
@@ -196,9 +188,8 @@
     \item \textbf{Part-time Python developer}
     \hfill{\textcolor{black!80}{\small{May 2018 - July 2018}}}\\
     \smallGreyFont{Pinnacle Media, Manipal, India}\\
-      Worked on implementing real time face detection and recognition using open-cv, dlib and scikit-learn on a Raspberry Pi.
+      Worked on implementing real time face detection and recognition using OpenCV, dlib and scikit-learn on a Raspberry Pi.
   \end{itemize}
-
 
 % Publications
 \section*{Publications}
@@ -207,52 +198,38 @@
     \textbf{A Robust Method for Nuclei Segmentation of H\&E Stained Histopathology Images}\\
     IEEE 7th International Conference on Signal Processing and Integrated Networks (SPIN 2020), 27 - 28 February 2020, Amity University, Sec-125, Noida, Delhi-NCR, India -- \textit{\textbf{Accepted}}
 
-    \item Shyam Lal, \textbf{Russel Dsouza}, Anirudh Kanfade, Kumar Alabhya, Aman Kumar, Maneesh M, Jyoti Kini
-    \textbf{Deep Learning based Framework for Segmentation of H\&E Stained Histopathology Images of Kidney Tissues}\\
-    IEEE Transactions of Medical Imaging, IEEE publisher.Indexed by SCI, Thomson ISI, Scopus (Elsevier), JCR (2018) Impact Factor: 2.770. -- \textit{Under preparation}
+    % \item Shyam Lal, \textbf{Russel Dsouza}, Anirudh Kanfade, Kumar Alabhya, Aman Kumar, Maneesh M, Jyoti Kini
+    % \textbf{Deep Learning based Framework for Segmentation of H\&E Stained Histopathology Images of Kidney Tissues}\\
+    % IEEE Transactions of Medical Imaging, IEEE publisher.Indexed by SCI, Thomson ISI, Scopus (Elsevier), JCR (2018) Impact Factor: 2.770. -- \textit{Under preparation}
   \end{enumerate}
-
 
 % Education
 \section*{Education}
   \begin{itemize}
     \item National Institute of Technology Karnataka, India\hfill
-    \smallGreyFont{2017-2021(expected)}
-    \\
+    \smallGreyFont{2017-2021(expected)} \\
     \smallGreyFont{B.Tech in Electronics and Communications Engineering}
     \hfill{\smallGreyFont{CGPA: 8.7}}
 
     \item Little Rock Indian School, Karnataka, India\hfill
-    \smallGreyFont{2004-2017}
-    \\
+    \smallGreyFont{2004-2017} \\
     \smallGreyFont{K-12}
   \end{itemize}
-
 
 % Academic courses
 \section*{Course Work}
   \begin{itemize}
     \item  Digital signal processing in Python, Machine learning in neuroimaging, \\
     Digital system design in Verilog, Embedded system design,
-    Microprocessors, Control sytems, VLSI design\\
+    Microprocessors, Control sytems, VLSI design \\
     Numerical Analysis, Statistical Analysis, Data structures and algorithms, Digital electronics \& Computer architecture
   \end{itemize}
-
-
-% Awards & Honors
-\section*{Awards and Honors}
-\begin{itemize}
-  \item School topper in Math(99/100) and English(98/100) in Grade 12
-  \item Top 1\%(CGPA 10.0) in India in Grade 10
-\end{itemize}
-
 
 % Interests
 \section*{Interests}
   \begin{itemize}
-    \item Computer vision, Neuroscience and Augmented Reality
+    \item Computer vision, Neuroscience and Augmented reality
   \end{itemize}
-
 
 % Footer
 \bigskip
