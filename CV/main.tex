@@ -1,0 +1,77 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper, roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.77]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Russel}{Shawn Dsouza}
+% TODO: Improve Address & title
+\title{3rd year Undergraduate}
+\address{NITK}{575025 Surathkal}{India}
+\email{rshwndsz@gmail.com}
+\social[github]{rshwndsz}
+\social[linkedin]{rshwndsz}
+\social[homepage]{rshwndsz.github.io}
+
+\begin{document}
+\makecvtitle
+
+\section{Research Interests}
+
+\section{Education}
+    \cventry{2017--2021}
+    {Bachelor of Technology}
+    {Electronics and Communications Engineering}
+    {\hspace{35pt} National Institute of Technology Karnataka}{}{} 
+
+% \section{Pre-prints}
+
+% \section{Publications}
+
+\section{Research Experience}
+    \cventry{2017--2018}{Junior Developer}{Ats Informatica}{Nova Lima}{}{
+    I worked on bug fixes for so-called SLAs and
+    doing refactoring in the ERP system, aimed at the wholesale and retail market, in which the technologies used are: Java, TortoiseSVN, Postgres, MVC, interface framework is JSF.
+    I participated in the communication of the company's ERP system with Magento.
+    }
+
+% \section{Awards and Honours}
+
+\section{Relevant coursework at NIT Karnataka}
+    \cvitem{Signal Processing}{Digital Signal Processing}
+    \cvitem{Math}{Numerical Analysis, Statistical Analysis}
+    \cvitem{System design}{Digital System Design with Verilog, VLSI Design with SPICE}
+
+\section{Key technical skills}
+    \cvitem{Languages}{Python, C++, Matlab, Javascript}
+    \cvitem{Software-packages}{Pytorch (Deep Learning), Keras (Deep Learning), Pandas-Numpy-Matplotlib (Data Science)}
+    \cvitem{Tools}{git, Docker, vim}
+    \cvitem{Platforms}{MacOS, Linux, Windows}
+
+\section{Languages}
+    \cvitemwithcomment{English}{Fluent}{}
+    \cvitemwithcomment{Hindi}{Fluent}{}
+    \cvitemwithcomment{Kannada}{Intermediate}{}
+
+\clearpage
+\end{document}
+
