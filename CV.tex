@@ -1,108 +1,91 @@
 % === PREAMBLE ===
-
 % Font size
 \documentclass[letterpaper, 10pt, oneside]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{setspace}
-\usepackage{hyperref}
+% For better tables
+\usepackage{tabularx}
 \usepackage{xcolor}
+% For Hyperlinks
+\usepackage{hyperref}
+% For better link colors
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
     citecolor={blue!50!black},
     urlcolor={blue!80!black}
 }
+% For thicker horizontal rules
 \usepackage{booktabs}
+% For GitHub & LinkedIn icons
 \usepackage{fontawesome}
 % Margins
 \usepackage[left=.64in, right=.64in, bottom=.64in, top=.64in]{geometry}
-
-% Skype information - include your Skype name for a link to add you on Skype
-\newcommand*{\Skype}{\href{skype:john.smith?add}{john.smith}} 
-\newcommand{\Absender}[1][\normalsize]{\Skype} 
-
 % Page numbers - {arabic}=Arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
 \pagenumbering{arabic}
-
 % === END OF PREAMBLE ===
+
+% === MY COMMANDS ===
+\newcommand{\stitle}[1]{\normalsize{\textsc{#1}}}
 
 \begin{document}
 
-% === NAME OF APPLICANT ===
-
+% === ME ===
 \noindent\Large{\textbf{Russel Dsouza}} \\
 \vspace{-1.1ex}
 \hrule
 \normalsize
 
-% === CONTACT INFORMATION ===
-\vspace{.64em}
-\begin{tabular}{l l}
-    Electronics and Communications Engineering & \hspace{1in} \href{mailto:rshwndsz@gmail.com}{rshwndsz@gmail.com} \\
-    National Institute of Technology Karnataka & \hspace{1in} \href{www.rshwndsz.github.io}{rshwndsz.github.io}   \\
-    NH 66, Srinivasnagar, Surathkal, Mangalore, Karnataka 575025 & \hspace{1in} \faGithub\ \faLinkedin\ rshwndsz\\
-\end{tabular}
-
+% === CV ===
 \vspace{1em}
-
-% === MAIN BODY ===
-% The main body is contained in a tabular environment. To move sections onto the next page, simply end the tabular environment and begin a new tabular environment.
-
-\noindent \begin{tabular}{@{} l l}
-\normalsize{R}\footnotesize{ESEARCH}  & My general interest is to crack the bain. \\
-\normalsize{I}\footnotesize{NTERESTS} & \textit{Keywords}: Computer vision, Medical imaging, Neuroscience \\
-    & \\
-\normalsize{E}\footnotesize{DUCATION} & \textbf{Most Recent University} \\
-    & Ph.D., Economics, 2015. \\
-    & Fields: International Trade, Monetary Economics, Development \\
-    & M.A., Political Science, 2013. \\
-    & \\
-    & \textbf{University of Illinois Champaign-Urbana} \\
-    & B.A., Economics, 2005. \\
-    & \\
-\normalsize{D}\footnotesize{ISSERTATION} & ``Title of Dissertation" \\
-    & \parbox{5.0in}{Short description/summary of research and estimation techniques. This can be several lines long because of the paragraph box.}\\
-    & \\
-\normalsize{R}\footnotesize{ESEARCH} & \textbf{Department, University} \\
-    & Postdoctoral Research Associate \\
-    & Project: Title of Research \\
-    & \\
-\normalsize{T}\footnotesize{EACHING} & \textbf{Department, University} \\
-    & Instructor, Fundamentals of the Global Economy, 2016 \\
-    & \\
-    &\textbf{Department, University} \\
-    & Job Title, Course Name, 2014-2015 \\
-    & Job Title, Course Name, 2012-2014 \\
-    & \\
-    & \textbf{Department, University} \\
-    & Job Title, Course Name, 2013 \\
-    & Job Title, Course Name, 2013 \\
-    & \\
-\normalsize{A}\footnotesize{WARDS and } & \textbf{Graduate Student Teacher of the Year, Department} \\
-\normalsize{F}\footnotesize{ELLOWSHIPS} & Course Name, 2014--2015 \\
-    & \\
-    & \textbf{Fulbright Scholarship} \\
-    & City, Country, 2006--2009 \\
-    & \\
-\normalsize{L}\footnotesize{ANGUAGES}  & English (native), German (advanced) \\
-\normalsize{S}\footnotesize{KILLS} & Stata, \LaTeX, Eviews, Mathematica  \\
-\end{tabular}
-
-\newpage
-
-% === REFERENCES ===
-% The reference section has links to your references' websites and email addresses.
-
 \noindent \begin{tabular}{@{} l l l}
-    \normalsize{R}\footnotesize{EFERENCES} & \href{http://www.professorone.com}{Professor One} & \href{http://www.professortwo.com}{Professor Two} \\
-    & Department Name &  Department Name \\
-    & University Name &  University Name \\
-    & \small{\href{mailto:prof1@email.com}{prof1@email.com}} & \small{\href{mailto:prof2@email.com}{prof2@email.com}} \\
-    && \\
-    & \href{http://www.professorthree.com}{Professor Three} & \href{http://www.professorfour.com}{Professor Four}  \\
-    & Department Name &  Department Name \\
-    & University Name &  University Name \\
-    & \small{\href{mailto:prof3@email.com}{prof3@email.com}} & \small{\href{mailto:prof4@email.com}{prof4@email.com}} \\
+% Address & socials
+\stitle{Contact}     & Electronics and Communications Engineering        & \hfill \href{mailto:rshwndsz@gmail.com}{rshwndsz@gmail.com} \\
+\stitle{Information} & National Institute of Technology Karnataka        & \hfill \href{www.rshwndsz.github.io}{rshwndsz.github.io}    \\
+                     & NH 66, Srinivasnagar, Surathkal, Karnataka 575025 & \hfill \faGithub\ \faLinkedin\ rshwndsz                     \\
+\\
+
+% Research interests
+\stitle{Research}  & My general interest is to \\
+\stitle{Interests} & \textit{Keywords}: Computer vision, Augmented reality, Medical imaging, Neuroscience \\
+\\
+
+% Education
+\stitle{Education} & \textbf{National Institute of Technology Karnataka (NIT Karnataka)} \\
+                   & Bachelor of Technology, Electronics and Communications Engineering & \hspace{-3em} \textit{July 2017\ --\ May 2021}\\
+\\
+
+% Publications
+
+% Research experience
+\stitle{Research} & \textbf{\textit{Winter Research Intern, Deep learning lab, NIT Karnataka}} \\
+\stitle{Projects} & \textbf{\textit{Segmentation of nuclei in histopathology images of kidney tissues}} \\
+                 & \textit{Mentored by Dr.\ Shyam Lal} & \hspace{-3em} \textit{Dec 2019\ --\ Feb 2020} \\
+\\
+                 & \textbf{\textit{Summer Research Intern, Deep learning lab, NIT Karnataka}} \\
+                 & \textbf{\textit{Segmentation of nuclei in histopathology images of kidney tissues}} \\
+                 & \textit{Mentored by Dr.\ Shyam Lal} & \hspace{-3em} \textit{May 2019\ --\ July 2019} \\
+\\
+
+% Skills
+\stitle{Skills} & Computational tools: MATLAB \\
+              % & Bioinformatics tools: \\
+                & Programming languages: C++, Python, Javascript, Rust, C, Verilog, SPICE \\
+                & Software packages: Pytorch, OpenCV, Pandas \\
+                & Natural languages: English (proficient), Hindi (proficient) \\
+\\
+
+% Notable projects
+\stitle{Notable}  & \\
+\stitle{Projects} & \\
+\\
+
+% Positions of responsibility
+
+% Achievements, awards & honours
+
+% References
+
 \end{tabular}
 
 \end{document}
