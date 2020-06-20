@@ -5,15 +5,17 @@
 \usepackage{setspace}
 % For better tables
 \usepackage{tabularx}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 % For Hyperlinks
 \usepackage{hyperref}
 % For better link colors
-\hypersetup{
-    colorlinks,
-    linkcolor={red!50!black},
-    citecolor={blue!50!black},
-    urlcolor={blue!80!black}
+\hypersetup{ colorlinks = true,
+            linkcolor   = blue,
+            filecolor   = magenta,
+            urlcolor    = Fuchsia,
+            pdftitle    = {Russel's CV},
+            bookmarks   = true,
+            pdfpagemode = FullScreen,
 }
 % For thicker horizontal rules
 \usepackage{booktabs}
@@ -27,6 +29,7 @@
 
 % === MY COMMANDS ===
 \newcommand{\stitle}[1]{\normalsize{\textsc{#1}}}
+\newcommand{\bdit}[1]{\textit{\textbf{#1}}}
 
 \begin{document}
 
@@ -40,9 +43,9 @@
 \vspace{1em}
 \noindent \begin{tabular}{@{} l l l}
 % Address & socials
-\stitle{Contact}     & Electronics and Communications Engineering        & \hfill \href{mailto:rshwndsz@gmail.com}{rshwndsz@gmail.com} \\
-\stitle{Information} & National Institute of Technology Karnataka        & \hfill \href{www.rshwndsz.github.io}{rshwndsz.github.io}    \\
-                     & NH 66, Srinivasnagar, Surathkal, Karnataka 575025 & \hfill \faGithub\ \faLinkedin\ rshwndsz                     \\
+\stitle{Contact}     & Electronics and Communications Engineering        & \hfill \href{mailto:rshwndsz@gmail.com}{rshwndsz@gmail.com}  \\
+\stitle{Information} & National Institute of Technology Karnataka        & \hfill \href{www.rshwndsz.github.io}{rshwndsz.github.io}     \\
+                     & NH 66, Srinivasnagar, Surathkal, Karnataka 575025 & \hfill \faGithub\ \faLinkedin\ \textcolor{Fuchsia}{rshwndsz} \\
 \\
 
 % Research interests
@@ -58,12 +61,12 @@
 % Publications
 
 % Research experience
-\stitle{Research} & \textbf{\textit{Winter Research Intern, Deep learning lab, NIT Karnataka}} \\
-\stitle{Projects} & \textbf{\textit{Segmentation of nuclei in histopathology images of kidney tissues}} \\
+\stitle{Research} & \bdit{Winter Research Intern, Deep learning lab, NIT Karnataka} \\
+\stitle{Projects} & \bdit{Segmentation of nuclei in histopathology images of kidney tissues} \\
                  & \textit{Mentored by Dr.\ Shyam Lal} & \hspace{-3em} \textit{Dec 2019\ --\ Feb 2020} \\
 \\
-                 & \textbf{\textit{Summer Research Intern, Deep learning lab, NIT Karnataka}} \\
-                 & \textbf{\textit{Segmentation of nuclei in histopathology images of kidney tissues}} \\
+                 & \bdit{Summer Research Intern, Deep learning lab, NIT Karnataka} \\
+                 & \bdit{Segmentation of nuclei in histopathology images of kidney tissues} \\
                  & \textit{Mentored by Dr.\ Shyam Lal} & \hspace{-3em} \textit{May 2019\ --\ July 2019} \\
 \\
 
@@ -76,8 +79,20 @@
 \\
 
 % Notable projects
-\stitle{Notable}  & \\
-\stitle{Projects} & \\
+\stitle{Notable}  &  \\ 
+\stitle{Projects} &  \\ 
+                   
+                  & \bdit{Nuclear segmentation of histopathology images} \\
+                  & -- The objective of this work was to  \\
+                  & -- I did  \\
+                  & -- The model achieved \\
+\\
+                  & \bdit{Detecting Ponzi schemes in Ethereum smart contracts} \\
+                  & -- Built a custom model using CNNs and stacked autoencoders and trained.\\ 
+\\
+                  & \bdit{Predicting truth level of news articles} \\ 
+                  & -- Built a classifier and trained it on the LIAR-PLUS dataset to classify news articles into 6 different categories
+                  based on their truth level
 \\
 
 % Positions of responsibility
