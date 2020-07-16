@@ -156,32 +156,42 @@
                     }
 
 \\
+                  & \bdit{Image Denoising} \hfill \textit{July 2020} \\
+                  & \parbox{0.8\textwidth}{
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex]
+                            \item Reproduced a very deep persistent memory network to perform image restoration by removing noise and
+                                predicting the uncorrupted image.
+                            \item The model was trained on the images of the Berkeley Segmentation Dataset and 
+                                tested on a modified version of the CIFAR10 dataset.
+                        \end{itemize}
+                  }
+\\
                   & \bdit{Brain Tumour Segmentation (BraTS)} \hfill \textit{Dec 2019} \\
                   & \parbox{0.8\textwidth}{
                         \begin{itemize}[leftmargin=*, itemsep=-0.88ex]
-                            \item Reproduced state-of-the-art multi-class semantic segmentation models in Keras/TFv1 and trained them on a part of the
-                                  BraTS dataset to segment brain tumour and the surrounding edema from MRI images.
-                            \item Achieved an IoU score of 0.81 on the obtained dataset.
+                            \item Reproduced state-of-the-art multi-class semantic segmentation models in Keras/TFv1 and
+                                trained them on a part of the BraTS dataset to segment brain tumour and the surrounding edema from MRI images.
                         \end{itemize}
                     }  
 \\
-                  & \bdit{Detecting Ponzi schemes in Ethereum smart contracts} \hfill \textit{Aug 2019\ --\ Sep 2019} \\
+                  & \bdit{Detecting Ponzi schemes in smart contracts} \hfill \textit{Aug 2019\ --\ Sep 2019} \\
                   & \parbox{0.8\textwidth}{
                         \begin{itemize}[leftmargin=*, itemsep=-0.88ex]
-                            \item Built a custom model using CNNs and stacked auto-encoders. 
-                                  The model was trained on the raw bytecode of Ethereum smart contracts mined from the Ethereum blockchain 
+                            \item Built a custom model to detect Ponzi smart contracts deployed on the Ethereum blockchain
+                                using CNNs and stacked auto-encoders. 
+                            \item The model was trained on the raw bytecode of Ethereum smart contracts mined from the Ethereum blockchain 
                                   using Google BigQuery, publicly available Solidity source code of popular smart contracts, 
                                   and a publicly available dataset of known Ponzi schemes.
-                            \item The model was built in under 48h as a part of a blockchain themed coding sprint.
+                            \item The model was built in under 48h as a part of a deep-learning coding sprint.
                         \end{itemize}
                     }  
 \\
                   & \bdit{Predicting truth level of news articles} \hfill \textit{Jul 2019\ --\ Aug 2019} \\
                   & \parbox{0.8\textwidth}{
                         \begin{itemize}[leftmargin=*, itemsep=-0.88ex]
-                            \item Built a text classifier using a Bidirectional-LSTM. 
-                                  The model was trained on the Liar-Plus dataset to classify news articles into 
-                                  6 different categories based on their truth level.
+                            \item Built a model to classify news articles into 6 different categories based on their truth level.
+                            \item The model was trained on the LIAR-PLUS dataset containing news articles and
+                                fact-checking justifications from trusted sources.
                         \end{itemize}
                     }  
 \\
