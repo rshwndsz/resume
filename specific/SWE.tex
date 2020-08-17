@@ -1,0 +1,287 @@
+% A tabular CV 
+
+% === PREAMBLE ===
+% Font size
+\documentclass[letterpaper, 10pt, oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+% For better tables
+\usepackage{tabularx}
+% For multi-page table
+\usepackage{longtable}
+% For more color names
+\usepackage[dvipsnames]{xcolor}
+% For Hyperlinks
+\usepackage{hyperref}
+% For better link colors
+\definecolor{dark-purple}{HTML}{00034D}
+\hypersetup{colorlinks  = true,
+            linkcolor   = blue,
+            filecolor   = magenta,
+            urlcolor    = dark-purple, 
+            pdftitle    = {Russel's CV},
+            bookmarks   = true,
+            pdfpagemode = FullScreen,
+}
+% For thicker horizontal rules
+\usepackage{booktabs}
+% For icons
+\usepackage{fontawesome}
+% For margins
+\usepackage[left=.64in, right=.64in, bottom=.64in, top=.64in]{geometry}
+% For the thick underline - https://tex.stackexchange.com/a/443445
+\usepackage{lipsum}
+\newcommand\dunderline[3][-1pt]{{%
+        \setbox0=\hbox{#3}
+\ooalign{\copy0\cr\rule[\dimexpr#1-#2\relax]{\wd0}{#2}}}}
+% For customization of list environment
+\usepackage{enumitem}
+
+% SETUP 
+% Page numbers - {arabic}=Arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{arabic}
+
+
+% === MY COMMANDS ===
+% Section title - Uppercase with first letter slightly bigger
+\newcommand{\stitle}[1]{\normalsize{\textsc{#1}}}
+% Bold & Italic
+\newcommand{\bdit}[1]{\textit{\textbf{#1}}}
+% Use hyphens instead of bullets for lists
+\def\labelitemi{--}
+\begin{document}
+
+
+% === ME ===
+\noindent\dunderline[-2ex]{1pt}{\Large{\textbf{Russel Shawn Dsouza} \hspace{0.7\linewidth} }} \\
+\normalsize
+
+
+% === CV ===
+\noindent \begin{longtable}{p{0.14\linewidth} p{0.59\linewidth} rp{0.15\linewidth}}
+% Address & socials
+\stitle{Contact}     & \href{https://nitk.ac.in}{National Institute of Technology Karnataka (NITK)} 
+                     & \href{mailto:russel.171ec143@nitk.edu.in}{russel.171ec143@nitk.edu.in} \\
+
+\stitle{Information} & NH66, Srinivasnagar, Surathkal, Mangalore        
+                     & \href{https://rshwndsz.github.io}{rshwndsz.github.io} \\
+                     & Karnataka, India 575025. 
+                     & \href{mailo:rshwndsz@gmail.com}{\faEnvelope}
+                       \href{https://github.com/rshwndsz}{\faGithub} 
+                       \href{https://linkedin.com/in/rshwndsz}{\faLinkedin}
+                       \textcolor{dark-purple}{rshwndsz} \\
+\end{longtable}
+
+\vspace{-1.2em}
+
+\noindent \begin{longtable}{@{} p{0.14\linewidth} p{0.8\linewidth}}
+
+% Research interests
+% \stitle{Research}  & Computer vision, Neuroscience of vision and motor control, Cybernetics, Mixed Reality \\
+% \stitle{Interests} & \\
+% \\
+
+
+% Education
+\stitle{Education} & \textbf{National Institute of Technology Karnataka (NIT Karnataka)} \\
+                   & Bachelor of Technology, Electronics and Communications Engineering \hfill \hspace{-3em} \textit{Jul 2017\ --\ May 2021} \\
+\\
+
+
+% Publications
+% TODO Remove this shitty publication for serious applications
+\stitle{Publications} & Lal, S., \textbf{Dsouza, R.}, Maneesh, M., Kanfade, A., Kumar, A., Perayil, G., Alabhya, K., Chanchal, A.K. and Kini, J. \\
+                      & \textit{``A Robust Method for Nuclei Segmentation of H\&E Stained Histopathology Images.''} \\
+                      & 2020, 7th International Conference on Signal Processing and Integrated Networks (SPIN) (pp.~453--458)\@. IEEE\@.  \\
+                      & \textcolor{dark-purple}{DOI\@: 10.1109/SPIN48934.2020.9070874} \\
+\\
+
+
+% Research experience
+\stitle{Research}   & \bdit{Winter Research Intern, Deep learning lab, NIT Karnataka} \\
+\stitle{Experience} & \bdit{Segmentation of nuclei in histopathology images of kidney, liver and bladder tissues} \\
+                    & \textit{Mentored by Dr.\ Shyam Lal} \hfill \hspace{-3em} \textit{Dec 2019\ --\ Feb 2020} \\
+                    & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=-0.88ex]
+                            \item Implemented state of the art models and designed data pipelines for nuclear segmentation in histopathology images of kidney and liver tissues. 
+                            \item Worked on the detection of Urothelial Carcinoma from whole slide images (average dimensions of 80000$\times$50000) of bladder tissues.
+                            \item Built an open-source repository benchmarking segmentation models on histopathology datasets.
+                            \item Presented a report reviewing the different methods to perform nuclear segmentation.
+                        \end{itemize}
+                    }
+\\
+\\
+
+                    & \bdit{Summer Research Intern, Deep learning lab, NIT Karnataka} \\
+                    & \bdit{Segmentation of nuclei in histopathology images of kidney tissues} \\
+                    & \textit{Mentored by Dr.\ Shyam Lal} \hfill \hspace{-3em} \textit{May 2019\ --\ Jun 2019} \\
+                    & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=-0.88ex]
+                            \item Designed and debugged efficient implementations of classical image processing algorithms on large datasets.
+                            \item Developed and maintained data pipelines for deep learning based image segmentation and classification models.
+                            \item Worked on reproducing results from seminal papers in the field of automated histopathology.
+                        \end{itemize}
+                    } 
+\\
+\\
+
+% Work Experience
+\stitle{Work}       & \bdit{Frontend Developer and UI Designer} \\
+\stitle{Experience} & \bdit{IRIS, NIT Karnakata} \hfill \textit{Aug 2018\ --\ Apr 2019} \\
+                    & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=-0.88ex]
+                            \item Debugged and maintained parts of the frontend code at IRIS --- The official student portal of NIT Karnataka.
+                            \item Designed a new UI system from the ground up in Figma.
+                            \item Developed the design system in Vue and worked on an integration with the legacy Rails code.
+                        \end{itemize}
+                    }
+\\
+\\
+                    & \bdit{Python Developer} \\
+                    & \bdit{Pinnacle Media, Manipal} \hfill \textit{May 2018\ --\ Jun 2018} \\
+                    & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=-0.88ex]
+                            \item Built and deployed real-time face detection and recognition, using OpenCV, dlib, and scikit-learn, 
+                                on a Raspberry Pi as a part of an `employee attendance' system.
+                        \end{itemize}
+                    }
+\\
+\\
+
+% Skills
+\stitle{Skills} & \\[-2.34ex]
+                & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=0ex, itemsep=-0.4ex, topsep=-2ex, label={}]
+                            \item \bdit{Languages}:               Python, C++, MATLAB, Verilog, ngSPICE 
+                            \item \bdit{Frameworks and packages}: PyTorch, Keras, OpenCV, scikit-learn, Numerical Python 
+                            \item \bdit{Tools}:                   git, bash, Docker, TravisCI, Linux, vim, PyCharm
+                            \item \bdit{Hardware}:                Raspberry Pi, Arduino, Xilinx Artix 7 FPGA 
+                            \item \bdit{Natural languages}:       English, Hindi, Kannada, Konkani 
+                        \end{itemize}
+                    }
+\\
+\\
+
+
+\newpage
+% Notable projects
+\stitle{Notable}  & \bdit{Satellite detection in images from low-cost telescopes} \hfill \textit{Jul 2020\ --\ Present} \\
+\stitle{Projects} & \\[-4ex]
+                  & \parbox{0.8\textwidth}{%
+                      \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=1.3ex]
+                            \item Working on the design and development of a model to detect orbiting objects in the geostationary ring,
+                                  from sequences of consecutive frames imaging unknown portions of the sky,
+                                  as a part of the `spotGEO' competition by the European Space Agency (ESA).
+                        \end{itemize}
+                  } \\
+
+                  & \bdit{Identifying Melanoma in images of skin lesions} \hfill \textit{Jun 2020\ --\ Present} \\
+                  & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+                            \item Working on building an ensemble network of detection models to accurately detect skin cancer, 
+                                  specifically Melanoma, in images of skin lesions 
+                                  as a part of the SIIM-ISC Melanoma classification challenge on Kaggle. 
+                        \end{itemize}
+                    } \\
+                    \\[-1.4ex]
+
+                  & \bdit{Image Denoising} \hfill \textit{Jul 2020} \\
+                  & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+                            \item Reproduced a very deep persistent memory network to perform image restoration by removing noise and
+                                  predicting uncorrupted images and achieved results comparable to the original paper.
+                            \item The model was trained on images from the Berkeley Segmentation Dataset (BSDS300) and 
+                                  tested on a modified version of the CIFAR10 dataset.
+                        \end{itemize}
+                  } \\
+                    \\[-1.4ex]
+
+                  & \bdit{Muon Physics} \hfill \textit{Mar 2020 - Jun 2020} \\
+                  & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+                            \item Designed a custom model to classify muon momenta using a tabular dataset of variables and parameters. 
+                            \item The model was trained on monte-carlo simulated data from the Cathode Strip Chambers (CSC) 
+                                  at the CMS experiment of Large Hadron Collider at CERN.
+                        \end{itemize}
+                  } \\
+                    \\[-1.4ex]
+
+                  & \bdit{Segmentation of brain tumour in MRI images} \hfill \textit{Dec 2019} \\
+                  & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+                            \item Reproduced state of the art semantic segmentation models in Keras/TFv1 
+                                  to segment brain tumours and surrounding edema from MRI images.
+                            \item The model was trained and tested on a part of the Brain Tumour Segmentation (BraTS) dataset.
+                        \end{itemize}
+                    }  \\
+                    \\[-1.4ex]
+
+                  & \bdit{Detecting Ponzi schemes in smart contracts} \hfill \textit{Aug 2019\ --\ Sep 2019} \\
+                  & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+                            \item Designed a custom model to detect Ponzi smart contracts deployed on the Ethereum blockchain 
+                                  using CNNs and stacked auto-encoders. 
+                            \item The model was trained on the raw bytecode of Ethereum smart contracts mined from the Ethereum blockchain 
+                                  using Google BigQuery, publicly available Solidity source code of popular smart contracts, 
+                                  and a publicly available dataset of known Ponzi schemes.
+                            \item Developed in under 48h as a part of a coding sprint.
+                        \end{itemize}
+                    }  \\
+                    \\[-1.4ex]
+
+                  & \bdit{Predicting truth level of news articles} \hfill \textit{Jul 2019\ --\ Aug 2019} \\
+                  & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+                            \item Built a model to classify news articles into 6 different categories based on their truth level.
+                            \item The model was trained on the LIAR-PLUS dataset containing news articles and
+                                  fact-checking justifications from trusted sources.
+                        \end{itemize}
+                    }  \\
+                    \\[-1.4ex]
+
+                  & \bdit{Space Time Adaptive Processing (STAP) Radar} \hfill \textit{Apr 2019} \\
+                  & \parbox{0.8\textwidth}{%
+                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+                            \item Presented a report on the current state of STAP in Radar Signal Processing. 
+                            \item Simulated a radar implementing STAP in Matlab. 
+                        \end{itemize}
+                    } \\
+\\
+
+
+% Relevant Coursework
+\stitle{Relevant}   & Digital Signal Processing, Machine Learning for Neuroimaging \\
+\stitle{Coursework} & Digital System Design, Statistical Analysis, Numerical Analysis \\
+                    & Embedded System Design, Microprocessors, VLSI Design, Control Systems \\
+                    & Data Structures \& Algorithms, Digital Electronics \& Computer Architecture \\
+\\
+
+
+% Achievements, awards & honours
+\stitle{Achievements} & Selected as a \textbf{full-time research intern} at the ML Lab, RBCCPS, IISc, Bangalore \hfill \textit{Jul 2020} \\ 
+                      & to work on ``Simultaneous localization and mapping (SLAM)'' \\
+                      & \parbox{0.8\textwidth}{%
+                          \begin{itemize}[leftmargin=6ex, itemsep=-0.88ex, topsep=-0.88ex]
+                              \item Rescinded due to schedule conflicts arising from COVID-19. \\
+                          \end{itemize}
+                      }  
+\\
+                      & Selected for a \textbf{research internship} at HEPIA-Hesge, Geneva, Switzerland \hfill \textit{Mar 2020} \\
+                      & to work on ``NavTrack: A portable obstacle tracker for the rehabilitation of spatial neglect''\\
+                      & \parbox{0.8\textwidth}{%
+                          \begin{itemize}[leftmargin=6ex, itemsep=-0.88ex, topsep=-0.88ex]
+                              \item Received a grant of 4200CHF to conduct research under Prof. Florent Gluck, HEPIA.
+                              \item Rescinded (Internship \& grant) due to COVID-19. \\
+                          \end{itemize}
+                      }  
+\\
+
+
+% Positions of responsibility
+
+
+% References
+
+\end{longtable}
+\end{document}
+
