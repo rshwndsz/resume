@@ -1,6 +1,6 @@
 % A tabular CV 
 
-% === PREAMBLE ===
+% === Preamble ===
 % Font size
 \documentclass[letterpaper, 10pt, oneside]{article}
 \usepackage[utf8]{inputenc}
@@ -20,7 +20,6 @@
             filecolor   = magenta,
             urlcolor    = dark-purple, 
             pdftitle    = {Russel's CV},
-            bookmarks   = true,
             pdfpagemode = FullScreen,
 }
 % For thicker horizontal rules
@@ -29,7 +28,7 @@
 \usepackage{fontawesome}
 % For margins
 \usepackage[left=.64in, right=.64in, bottom=.64in, top=.64in]{geometry}
-% For the thick underline - https://tex.stackexchange.com/a/443445
+% For a thick underline - https://tex.stackexchange.com/a/443445
 \usepackage{lipsum}
 \newcommand\dunderline[3][-1pt]{{%
         \setbox0=\hbox{#3}
@@ -37,12 +36,13 @@
 % For customization of list environment
 \usepackage{enumitem}
 
-% SETUP 
-% Page numbers - {arabic}=Arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+% === Setup ===
+% Page numbers - 
+% {arabic}=Arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
 \pagenumbering{arabic}
 
 
-% === MY COMMANDS ===
+% === My Commands ===
 % Section title - Uppercase with first letter slightly bigger
 \newcommand{\stitle}[1]{\normalsize{\textsc{#1}}}
 % Bold & Italic
@@ -52,12 +52,12 @@
 \begin{document}
 
 
-% === ME ===
+% My name
 \noindent\dunderline[-2ex]{1pt}{\Large{\textbf{Russel Shawn Dsouza} \hspace{0.7\linewidth} }} \\
 \normalsize
 
 
-% === CV ===
+% Contact Info
 \noindent \begin{longtable}{p{0.14\linewidth} p{0.59\linewidth} rp{0.15\linewidth}}
 % Address & socials
 \stitle{Contact}     & \href{https://nitk.ac.in}{National Institute of Technology Karnataka (NITK)} 
@@ -77,7 +77,7 @@
 \noindent \begin{longtable}{@{} p{0.14\linewidth} p{0.8\linewidth}}
 
 % Research interests
-\stitle{Research}  & Computer vision, Cybernetics, Neuroscience of vision and motor control, Mixed Reality \\
+\stitle{Research}  & Computer vision, Low-power computing, Neuroscience of vision, Mixed Reality \\
 \stitle{Interests} & \\
 \\
 
@@ -89,7 +89,6 @@
 
 
 % Publications
-% TODO Remove this shitty publication for serious applications
 \stitle{Publications} & Lal, S., \textbf{Dsouza, R.}, Maneesh, M., Kanfade, A., Kumar, A., Perayil, G., Alabhya, K., Chanchal, A.K. and Kini, J. \\
                       & \textit{``A Robust Method for Nuclei Segmentation of H\&E Stained Histopathology Images.''} \\
                       & 2020, 7th International Conference on Signal Processing and Integrated Networks (SPIN) (pp.~453--458)\@. IEEE\@.  \\
@@ -112,15 +111,15 @@
 \\
 \\
 
-                    & \bdit{Summer Research Intern, Deep learning lab, NIT Karnataka} \\
-                    & \textit{Mentored by Dr.\ Shyam Lal} \hfill \hspace{-3em} \textit{May 2019\ --\ Jun 2019} \\
-                    & \parbox{0.8\textwidth}{%
-                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=-0.88ex]
-                            \item Designed and debugged efficient implementations of classical image processing algorithms on large datasets.
-                            \item Developed and maintained data pipelines for deep learning based image segmentation and classification models.
-                            \item Worked on reproducing results from seminal papers in the field of automated histopathology.
-                        \end{itemize}
-                    } 
+    & \bdit{Summer Research Intern, Deep learning lab, NIT Karnataka} \\
+    & \textit{Mentored by Dr.\ Shyam Lal} \hfill \hspace{-3em} \textit{May 2019\ --\ Jun 2019} \\
+    & \parbox{0.8\textwidth}{%
+        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=-0.88ex]
+            \item Designed and debugged efficient implementations of classical image processing algorithms on large datasets.
+            \item Developed and maintained data pipelines for deep learning based image segmentation and classification models.
+            \item Worked on reproducing results from seminal papers in the field of automated histopathology.
+        \end{itemize}
+    } 
 \\
 \\
 
@@ -136,14 +135,14 @@
                     }
 \\
 \\
-                    & \bdit{Python Developer} \\
-                    & \bdit{Pinnacle Media, Manipal} \hfill \textit{May 2018\ --\ Jun 2018} \\
-                    & \parbox{0.8\textwidth}{%
-                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=-0.88ex]
-                            \item Built and deployed real-time face detection and recognition, using OpenCV, dlib, and scikit-learn, 
-                                on a Raspberry Pi as a part of an `employee attendance' system.
-                        \end{itemize}
-                    }
+    & \bdit{Python Developer} \\
+    & \bdit{Pinnacle Media, Manipal} \hfill \textit{May 2018\ --\ Jun 2018} \\
+    & \parbox{0.8\textwidth}{%
+        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=-0.88ex]
+            \item Built and deployed real-time face detection and recognition, using OpenCV, dlib, and scikit-learn, 
+                on a Raspberry Pi as a part of an `employee attendance' system.
+        \end{itemize}
+    }
 \\
 \\
 
@@ -151,12 +150,11 @@
 \stitle{Skills} & \\[-2.34ex]
                 & \parbox{0.8\textwidth}{%
                         \begin{itemize}[leftmargin=0ex, itemsep=-0.4ex, topsep=-2ex, label={}]
-                            \item \bdit{Languages}:               Python, C++, MATLAB, Javascript, C, Verilog, ngSPICE 
+                            \item \bdit{Languages}:               Python, C++, Go, MATLAB, Javascript, C, Verilog, SPICE 
                             \item \bdit{Frameworks and packages}: PyTorch, Keras, OpenCV, scikit-learn, Numerical Python 
-                            \item \bdit{Web Development}:         React, Express, Node, MongoDB, GraphQL 
-                            \item \bdit{Tools}:                   git, bash, Docker, TravisCI, Linux, vim, PyCharm
+                            \item \bdit{Web Development}:         React, Express, Node
+                            \item \bdit{Tools}:                   git, bash, Docker, Linux, vim, PyCharm
                             \item \bdit{Hardware}:                Raspberry Pi, Arduino, Xilinx Artix 7 FPGA 
-                            \item \bdit{Natural languages}:       English, Hindi, Kannada 
                         \end{itemize}
                     }
 \\
@@ -167,101 +165,75 @@
 % Notable projects
 \stitle{Notable}  & \bdit{Low-light image enhancement on low power devices} \hfill \textit{Aug 2020\ --\ Present} \\
 \stitle{Projects} & \\[-4ex]
-                  & \parbox{0.8\textwidth}{%
-                      \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=1.3ex]
-                          \item Working on the design of hardware and software-optimized algorithms to enable people to 
-                                capture virant and detailed low-light photos with inexpensive camera sensors.
-                      \end{itemize}
-                  } \\
-                    
-                  & \bdit{Satellite detection in images from low-cost telescopes} \hfill \textit{Jul 2020\ --\ Present} \\
-                  & \parbox{0.8\textwidth}{%
-                      \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
-                            \item Working on the design and development of a model to detect orbiting objects in the geostationary ring,
-                                  from sequences of consecutive frames imaging unknown portions of the sky,
-                                  as a part of the `spotGEO' competition by the European Space Agency (ESA).
-                      \end{itemize}
-                  } \\
+    & \parbox{0.8\textwidth}{%
+    \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=1.3ex]
+        \item Working on the design of hardware and software-optimized algorithms to capture vibrant and detailed low-light photos with inexpensive camera sensors.
+        \item Working on model compression algorithms to fit memory and speed constraints.
+        \item Incorporating inference optimization methods for high performance deployments.
+        \item Building tools for better testing, deployment and to prevent model regressions.
+      \end{itemize}
+    } \\
 
-                  % & \bdit{Identifying Melanoma in images of skin lesions} \hfill \textit{Jun 2020\ --\ Present} \\
-                  % & \parbox{0.8\textwidth}{%
-                  %       \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
-                  %           \item Working on building an ensemble network of detection models to accurately detect skin cancer,
-                  %                 specifically Melanoma, in images of skin lesions
-                  %                 as a part of the SIIM-ISC Melanoma classification challenge on Kaggle.
-                  %       \end{itemize}
-                  %   } \\
-                    \\[-1.4ex]
+    & \bdit{Image Restoration} \hfill \textit{Jul 2020} \\
+    & \parbox{0.8\textwidth}{%
+        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+            \item Reproduced a very deep persistent memory network to perform image restoration by removing noise and predicting uncorrupted images; achieved results comparable to the original paper.
+        \end{itemize}
+    } \\
+    \\[-1.4ex]
 
-                  & \bdit{Image Denoising} \hfill \textit{Jul 2020} \\
-                  & \parbox{0.8\textwidth}{%
-                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
-                            \item Reproduced a very deep persistent memory network to perform image restoration by removing noise and
-                                  predicting uncorrupted images and achieved results comparable to the original paper.
-                            \item The model was trained on images from the Berkeley Segmentation Dataset (BSDS300) and 
-                                  tested on a modified version of the CIFAR10 dataset.
-                        \end{itemize}
-                  } \\
-                    \\[-1.4ex]
+    & \bdit{Muon Physics} \hfill \textit{Mar 2020 - Jun 2020} \\
+    & \parbox{0.8\textwidth}{%
+        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+            \item Designed a custom model to classify muon momenta which was trained on monte-carlo simulated data from the Cathode Strip Chambers (CSC) at the CMS experiment of Large Hadron Collider at CERN.
+        \end{itemize}
+    } \\
+    \\[-1.4ex]
 
-                  & \bdit{Muon Physics} \hfill \textit{Mar 2020 - Jun 2020} \\
-                  & \parbox{0.8\textwidth}{%
-                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
-                            \item Designed a custom model to classify muon momenta using a tabular dataset of variables and parameters. 
-                            \item The model was trained on monte-carlo simulated data from the Cathode Strip Chambers (CSC) 
-                                  at the CMS experiment of Large Hadron Collider at CERN.
-                        \end{itemize}
-                  } \\
-                    \\[-1.4ex]
+    & \bdit{Segmentation of brain tumours in MRI images} \hfill \textit{Dec 2019} \\
+    & \parbox{0.8\textwidth}{%
+        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+            \item Reproduced state of the art semantic segmentation models in Keras/TFv1 
+                  to segment brain tumours and surrounding edema from MRI images
+        \end{itemize}
+    }  \\
+    \\[-1.4ex]
 
-                  & \bdit{Segmentation of brain tumours in MRI images} \hfill \textit{Dec 2019} \\
-                  & \parbox{0.8\textwidth}{%
-                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
-                            \item Reproduced state of the art semantic segmentation models in Keras/TFv1 
-                                  to segment brain tumours and surrounding edema from MRI images.
-                            \item The model was trained and tested on a part of the Brain Tumour Segmentation (BraTS) dataset.
-                        \end{itemize}
-                    }  \\
-                    \\[-1.4ex]
+    & \bdit{Detecting Ponzi schemes in blockchain smart contracts} \hfill \textit{Aug 2019\ --\ Sep 2019} \\
+    & \parbox{0.8\textwidth}{%
+        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+            \item Designed a custom model to detect Ponzi smart contracts deployed on the Ethereum blockchain using CNNs and stacked auto-encoders. 
+            \item The model was trained on the raw bytecode of Ethereum smart contracts mined from the Ethereum blockchain using Google BigQuery, publicly available Solidity source code of popular smart contracts, and a publicly available dataset of known Ponzi schemes.
+            \item Developed in under 48h as a part of a coding sprint.
+        \end{itemize}
+    }  \\
+    \\[-1.4ex]
 
-                  & \bdit{Detecting Ponzi schemes in blockchain smart contracts} \hfill \textit{Aug 2019\ --\ Sep 2019} \\
-                  & \parbox{0.8\textwidth}{%
-                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
-                            \item Designed a custom model to detect Ponzi smart contracts deployed on the Ethereum blockchain 
-                                  using CNNs and stacked auto-encoders. 
-                            \item The model was trained on the raw bytecode of Ethereum smart contracts mined from the Ethereum blockchain 
-                                  using Google BigQuery, publicly available Solidity source code of popular smart contracts, 
-                                  and a publicly available dataset of known Ponzi schemes.
-                            \item Developed in under 48h as a part of a coding sprint.
-                        \end{itemize}
-                    }  \\
-                    \\[-1.4ex]
+    & \bdit{Predicting truth level of news articles} \hfill \textit{Jul 2019\ --\ Aug 2019} \\
+    & \parbox{0.8\textwidth}{%
+        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+            \item Built a model to classify news articles into 6 different categories based on their truth level.
+            \item The model was trained on the LIAR-PLUS dataset containing news articles and
+                  fact-checking justifications from trusted sources.
+        \end{itemize}
+    }  \\
+    \\[-1.4ex]
 
-                  & \bdit{Predicting truth level of news articles} \hfill \textit{Jul 2019\ --\ Aug 2019} \\
-                  & \parbox{0.8\textwidth}{%
-                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
-                            \item Built a model to classify news articles into 6 different categories based on their truth level.
-                            \item The model was trained on the LIAR-PLUS dataset containing news articles and
-                                  fact-checking justifications from trusted sources.
-                        \end{itemize}
-                    }  \\
-                    \\[-1.4ex]
-
-                  & \bdit{Space Time Adaptive Processing Radar} \hfill \textit{Apr 2019} \\
-                  & \parbox{0.8\textwidth}{%
-                        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
-                            \item Presented a report on the current state of STAP in Radar Signal Processing. 
-                            \item Simulated a radar implementing STAP in Matlab. 
-                        \end{itemize}
-                    } \\
+    & \bdit{Space Time Adaptive Processing Radar} \hfill \textit{Apr 2019} \\
+    & \parbox{0.8\textwidth}{%
+        \begin{itemize}[leftmargin=*, itemsep=-0.88ex, topsep=0.2ex]
+            \item Presented a report on the current state of STAP in Radar Signal Processing. 
+            \item Simulated a radar implementing STAP in Matlab. 
+        \end{itemize}
+    } \\
 \\
 
 
 % Relevant Coursework
 \stitle{Relevant}   & Neural Networks \& Deep learning, Application of Machine Learning in Medical Imaging,  \\
-\stitle{Coursework} & Digital Signal Processing, Digital System Design \\
+\stitle{Coursework} & Image and Video Processing, Speech and Audio Processing, Digital Signal Processing\\
                     & Statistical Analysis, Numerical Analysis \\
-                    & Embedded System Design, Microprocessors, VLSI Design, Control Systems \\
+                    & Embedded Systems, Digital System Design, Microprocessors, VLSI Design, Control Systems \\
                     & Data Structures \& Algorithms, Digital Electronics \& Computer Architecture \\
 \\
 
@@ -271,25 +243,19 @@
                       & to work on ``Simultaneous localization and mapping (SLAM)'' \\
                       & \parbox{0.8\textwidth}{%
                           \begin{itemize}[leftmargin=6ex, itemsep=-0.88ex, topsep=-0.88ex]
-                              \item Rescinded due to schedule conflicts (primarily because of COVID-19). \\
+                              \item Rescinded due to schedule conflicts arising due to the COVID-19 pandemic. \\
                           \end{itemize}
                       }  
 \\
-                      & Selected for a \textbf{research internship} at HEPIA-Hesge, Geneva, Switzerland \hfill \textit{Mar 2020} \\
-                      & to work on ``NavTrack: A portable obstacle tracker for the rehabilitation of spatial neglect''\\
-                      & \parbox{0.8\textwidth}{%
-                          \begin{itemize}[leftmargin=6ex, itemsep=-0.88ex, topsep=-0.88ex]
-                              \item Received a grant of 4200CHF to conduct research under Prof. Florent Gluck, HEPIA.
-                              \item Rescinded (Internship \& grant) due to COVID-19. \\
-                          \end{itemize}
-                      }  
+    & Selected for a \textbf{research internship} at HEPIA-Hesge, Geneva, Switzerland \hfill \textit{Mar 2020} \\
+    & to work on ``NavTrack: A portable obstacle tracker for the rehabilitation of spatial neglect''\\
+    & \parbox{0.8\textwidth}{%
+      \begin{itemize}[leftmargin=6ex, itemsep=-0.88ex, topsep=-0.88ex]
+          \item Received a grant of 4200CHF to conduct research under Prof. Florent Gluck, HEPIA.
+          \item Rescinded (Internship \& grant) due to lockdowns caused by the COVID-19 pandemic. \\
+      \end{itemize}
+    }  
 \\
-
-
-% Positions of responsibility
-
-
-% References
 
 \end{longtable}
 \end{document}
